@@ -1,0 +1,24 @@
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          {% include locale.html %}
+          <h2 class="footer-title">{{ t.site_title }}</h2>
+          <ul>
+            {% if current_lang == 'en' %}
+              {% assign footermenu = site.data.menus.en.footer | sort: 'weight' %}
+            {% else %}
+              {% assign footermenu = site.data.menus.zh-CN.footer | sort: 'weight' %}
+            {% endif %}
+            {% for item in footermenu %}
+            <li class="{% if item.url == page.url %}active{% endif %}">
+              <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+.logo {
+  flex-shrink: 0;
+
+  .logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  .logo-image {
+    display: block;
+    flex-shrink: 0;
+    height: 40px;
+    width: auto;
+    max-width: 72px;
+
+    @include media-breakpoint-up(sm) {
+      height: 48px;
+      max-width: 86px;
+    }
+  }
+
+  .logo-title {
+    display: block;
+    flex-shrink: 0;
+    height: 14px;
+    width: auto;
+    max-width: 140px;
+
+    @include media-breakpoint-up(sm) {
+      height: 17px;
+      max-width: 170px;
+    }
+  }
+}

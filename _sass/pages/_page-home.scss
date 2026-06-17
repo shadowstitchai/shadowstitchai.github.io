@@ -1,0 +1,40 @@
+.page-home {
+  @include media-breakpoint-up(md) {
+    .intro .row {
+      align-items: stretch;
+    }
+
+    .intro .col-md-7.col-lg-6.order-md-1 {
+      display: flex;
+      flex-direction: column;
+
+      .call {
+        margin-top: auto;
+      }
+    }
+
+    .intro .col-md-5.position-relative {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .intro-image {
+      display: block;
+    }
+  }
+
+  html[lang="zh-CN"] & .intro h1 {
+    width: auto;
+    font-size: 40px;
+    line-height: 1.15;
+    white-space: nowrap;
+
+    @include media-breakpoint-up(md) {
+      font-size: 48px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 52px;
+    }
+  }
+}

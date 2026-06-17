@@ -1,0 +1,13 @@
+{% include locale.html %}
+<div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a class="logo-link" href="{{ t.home_url | relative_url }}">
+        <img class="logo-image" alt="" src="{{ site.logo.icon | default: 'images/logo/logo-icon.svg' | relative_url }}" />
+        <img class="logo-title" alt="{{ t.site_title }}" src="{{ site.logo.title | default: 'images/logo/title.svg' | relative_url }}" />
+      </a>
+    </div>
+    {% include main-menu.html %}
+    {% include hamburger.html %}
+  </div>
+</div>

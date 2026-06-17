@@ -1,0 +1,17 @@
+{% include locale.html %}
+<div class="call">
+  <div class="call-box-top">
+    {% if site.data.contact.email %}
+    <div class="call-email"><strong>{{ t.email_label }}: </strong>
+      <a href="mailto:{{ site.data.contact.email }}">
+        {{ site.data.contact.email }}
+      </a>
+    </div>
+    {% endif %}
+  </div>
+    {% if include.show_button %}
+      <div class="call-box-bottom">
+        <a href="{{ t.contact_url | relative_url }}" class="button">{{ t.contact_button }}</a>
+      </div>
+    {% endif %}
+</div>

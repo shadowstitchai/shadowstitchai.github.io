@@ -1,0 +1,53 @@
+baseurl: ''
+url: 'https://shadowstitchai.github.io'
+permalink: pretty
+title: '暗线科技'
+description: '暗线科技，让 AI 创作更简单。'
+lang: zh-CN
+
+logo:
+  icon: "images/logo/logo-icon.svg"
+  title: "images/logo/title.svg"
+  wordmark: "images/logo/logo.svg"
+  slogan: "images/logo/logo-slogan.svg"
+  favicon: "images/favicon-32x32.svg"
+
+home: 
+  limit_products: 6
+
+collections:
+  products:
+    output: true
+    sort_by: weight
+
+defaults:
+  - scope:
+      path: ""
+      type: "products"
+    values:
+      layout: "product"
+  - scope:
+      path: "_pages"
+    values:
+      layout: "page"
+
+sass:
+  style: compressed # possible values: nested expanded compact compressed
+
+plugins:
+  - jekyll-environment-variables
+
+include:
+  - _pages
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.md
+  - LICENSE
+  - README.md

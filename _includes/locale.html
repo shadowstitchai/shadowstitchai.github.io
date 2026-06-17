@@ -1,0 +1,6 @@
+{% assign current_lang = page.lang | default: site.lang | default: 'zh-CN' %}
+{% if current_lang == 'en' %}
+  {% assign t = site.data.i18n.en %}
+{% else %}
+  {% assign t = site.data.i18n.zh-CN %}
+{% endif %}

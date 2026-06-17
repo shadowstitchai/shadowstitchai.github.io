@@ -1,0 +1,25 @@
+.intro-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-top: 0;
+}
+.intro-image-absolute {
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: 30px;
+  @include media-breakpoint-up(md) {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+}
+.intro-image-hide-mobile {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+}

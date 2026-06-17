@@ -1,0 +1,81 @@
+---
+layout: default
+bodyClass: "page-home"
+---
+
+{% include locale.html %}
+{% if current_lang == 'en' %}
+  {% assign features = site.data.features.en %}
+{% else %}
+  {% assign features = site.data.features.zh-CN %}
+{% endif %}
+
+<div class="intro">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+        {{ content }}
+        {% if page.show_call_box %}
+          {% include call.html show_button=true %}
+        {% endif %}
+      </div>
+      {% if page.intro_image %}
+      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+        <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relative_url }}" />
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<div class="strip">
+  <div class="container pt-6 pb-6 pb-md-10">
+    <div class="row justify-content-start">
+      {% assign limit = site.home.limit_products | default: 6 %}
+      {% assign product_count = 0 %}
+      {% for product in site.products %}
+        {% assign product_lang = product.lang | default: 'zh-CN' %}
+        {% if product_lang == current_lang and product_count < limit %}
+          {% assign product_count = product_count | plus: 1 %}
+          <div class="col-12 col-md-4 mb-1">
+            <div class="service service-summary">
+              <div class="service-content">
+                <h2 class="service-title">
+                  <a href="{{ product.url | relative_url }}">{{ product.title }}</a>
+                </h2>
+                <p>{{ product.excerpt | markdownify | strip_html | truncate: 100 }}</p>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <a class="button button-primary" href="{{ t.products_url | relative_url }}">{{ t.view_all_products }}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% if features %}
+<div class="strip strip-grey">
+  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
+    <div class="row justify-content-center">
+
+      {% for feature in features %}
+      <div class="col-12 col-md-6 col-lg-4 mb-2">
+        <div class="feature">
+          {% if feature.image %}
+          <div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image.url | relative_url }}" width="{{ feature.image.width }}" height="{{ feature.image.height }}" /></div>
+          {% endif %}
+          <h2 class="feature-title">{{ feature.title }}</h2>
+          <div class="feature-content">{{ feature.description }}</div>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
+{% endif %}

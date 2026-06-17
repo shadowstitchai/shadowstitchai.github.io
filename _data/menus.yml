@@ -1,0 +1,55 @@
+zh-CN:
+  main:
+    - name: "产品"
+      url: "/products/"
+      weight: 2
+    - name: "关于"
+      url: "/about/"
+      weight: 3
+    - name: "联系"
+      url: "/contact/"
+      weight: 4
+    - name: "English"
+      url: "/en/"
+      weight: 5
+  footer:
+    - name: "首页"
+      url: "/"
+      weight: 1
+    - name: "隐私政策"
+      url: "/privacypolicy/"
+      weight: 2
+    - name: "服务条款"
+      url: "/termsofservice/"
+      weight: 3
+    - name: "English"
+      url: "/en/"
+      weight: 4
+
+en:
+  main:
+    - name: "Products"
+      url: "/en/products/"
+      weight: 2
+    - name: "About"
+      url: "/en/about/"
+      weight: 3
+    - name: "Contact"
+      url: "/en/contact/"
+      weight: 4
+    - name: "中文"
+      url: "/"
+      weight: 5
+  footer:
+    - name: "Home"
+      url: "/en/"
+      weight: 1
+    - name: "Privacy Policy"
+      url: "/en/privacypolicy/"
+      weight: 2
+    - name: "Terms of Service"
+      url: "/en/termsofservice/"
+      weight: 3
+    - name: "中文"
+      url: "/"
+      weight: 4

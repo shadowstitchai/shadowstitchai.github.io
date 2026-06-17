@@ -1,0 +1,21 @@
+zh-CN:
+  home_url: "/"
+  products_url: "/products/"
+  contact_url: "/contact/"
+  site_title: "暗线科技"
+  email_label: "邮箱"
+  contact_button: "联系我们"
+  view_all_products: "查看全部产品"
+  copyright: "© 2026 北京暗线科技有限公司"
+  illustration_credit: '插画来源：<a href="https://storyset.com/">Storyset</a>'
+
+en:
+  home_url: "/en/"
+  products_url: "/en/products/"
+  contact_url: "/en/contact/"
+  site_title: "Shadow Stitch"
+  email_label: "Email"
+  contact_button: "Contact"
+  view_all_products: "View All Products"
+  copyright: "© 2026 Beijing Shadow Stitch Technology Co., Ltd."
+  illustration_credit: 'Illustrations by <a href="https://storyset.com/">Storyset</a>'
