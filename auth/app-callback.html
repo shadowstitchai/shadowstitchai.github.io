@@ -16,33 +16,50 @@ permalink: /auth/app-callback.html
       text-align: center;
       background: #f7f7f7;
       color: #111;
+      line-height: 1.5;
+    }
+    .card {
+      max-width: 360px;
+      margin: 0 auto;
+      padding: 24px 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
     }
     a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 20px;
+      display: block;
+      margin-top: 24px;
+      padding: 14px 20px;
       border-radius: 10px;
       background: #007aff;
       color: #fff;
       text-decoration: none;
       font-weight: 600;
+      font-size: 17px;
+    }
+    .hint {
+      margin-top: 16px;
+      font-size: 14px;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <p>授权成功，正在返回纽扣纸样…</p>
-  <p>若未自动跳转，请点击下方按钮。</p>
-  <a id="openApp" href="#">返回纽扣纸样</a>
+  <div class="card">
+    <p><strong>支付宝授权已成功</strong></p>
+    <p>请点击下方按钮返回纽扣纸样 App 完成登录。</p>
+    <a id="openApp" href="coutto://auth/callback">返回纽扣纸样</a>
+    <p class="hint">若支付宝提示页面错误，请先点「返回」回到本页，再点蓝色按钮。</p>
+  </div>
   <script>
     (function () {
       var qs = window.location.search || "";
       var hash = window.location.hash || "";
+      if (!qs && !hash) {
+        return;
+      }
       var target = "coutto://auth/callback" + qs + hash;
-      var link = document.getElementById("openApp");
-      link.href = target;
-      window.setTimeout(function () {
-        window.location.href = target;
-      }, 400);
+      document.getElementById("openApp").setAttribute("href", target);
     })();
   </script>
 </body>
