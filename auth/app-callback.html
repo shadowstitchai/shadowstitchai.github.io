@@ -1,0 +1,49 @@
+---
+layout: null
+permalink: /auth/app-callback.html
+---
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>返回纽扣纸样</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 32px 20px;
+      text-align: center;
+      background: #f7f7f7;
+      color: #111;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      border-radius: 10px;
+      background: #007aff;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <p>授权成功，正在返回纽扣纸样…</p>
+  <p>若未自动跳转，请点击下方按钮。</p>
+  <a id="openApp" href="#">返回纽扣纸样</a>
+  <script>
+    (function () {
+      var qs = window.location.search || "";
+      var hash = window.location.hash || "";
+      var target = "coutto://auth/callback" + qs + hash;
+      var link = document.getElementById("openApp");
+      link.href = target;
+      window.setTimeout(function () {
+        window.location.href = target;
+      }, 400);
+    })();
+  </script>
+</body>
+</html>
