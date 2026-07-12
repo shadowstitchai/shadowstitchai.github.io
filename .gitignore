@@ -22,3 +22,10 @@ Thumbs.db
 .Spotlight-V100
 .Trashes
 .idea
+
+# OSS deploy
+.env
+.ossutilconfig
+.jekyll-prod.override.yml
+bin/ossutil
+bin/ossutil-*

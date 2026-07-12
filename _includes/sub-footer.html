@@ -7,7 +7,16 @@
           {% if site.data.social %}
             {% include social.html %}
           {% endif %}
-          <div class="copyright">{{ t.copyright }}</div>
+          <div class="sub-footer-center">
+            <div class="copyright">{{ t.copyright }}</div>
+            <div class="beian">
+              <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">京ICP备2026038559号-1</a>
+              <a class="beian-gongan" href="https://beian.mps.gov.cn/#/query/webSearch?recordcode=11010602202879" target="_blank" rel="noopener noreferrer">
+                <img src="{{ '/assets/images/beian-gongan.png' | relative_url }}" alt="" width="16" height="16">
+                京公网安备11010602202879号
+              </a>
+            </div>
+          </div>
           <div class="illustration-credit">{{ t.illustration_credit }}</div>
         </div>
       </div>

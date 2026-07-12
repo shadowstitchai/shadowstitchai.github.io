@@ -1,0 +1,2 @@
+# Production overrides for OSS deployment (merged with _config.yml).
+url: 'https://shadowstitch.cn'
