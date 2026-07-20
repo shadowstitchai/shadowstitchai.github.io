@@ -1,12 +1,100 @@
 .page-service {
+  .product-with-mockup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 48px;
+    }
+  }
+
+  .product-main {
+    min-width: 0;
+    width: 100%;
+
+    .product-with-mockup & {
+      @include media-breakpoint-up(lg) {
+        flex: 1 1 auto;
+        max-width: 640px;
+      }
+    }
+  }
+
+  .product-mockup {
+    flex-shrink: 0;
+
+    img {
+      display: block;
+      width: 200px;
+      max-width: 100%;
+      height: auto;
+
+      @include media-breakpoint-up(lg) {
+        width: 220px;
+      }
+    }
+  }
+
+  .product-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 32px;
+  }
+
+  .product-icon {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    display: block;
+  }
+
+  .product-heading {
+    min-width: 0;
+
+    .title {
+      margin-bottom: 0;
+      font-size: 1.75rem;
+      line-height: 1.25;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .product-slogan {
+    margin: 8px 0 0;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    color: $steel;
+    white-space: nowrap;
+  }
+
   .content {
     > p {
-      &:first-of-type {
-        font-size: 1.6rem;
-        line-height: 1.4;
-        margin-bottom: 40px;
-        font-weight: regular;
-        color: rgb(104, 104, 104);
+      font-size: 1rem;
+      line-height: 1.56;
+      color: $steel;
+    }
+  }
+
+  .product-download {
+    margin: 40px 0 0;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: 600;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
       }
     }
   }

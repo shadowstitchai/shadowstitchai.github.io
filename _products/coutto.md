@@ -1,8 +1,13 @@
 ---
-title: Coutto 纽扣纸样
+title: 纽扣纸样
+list_title: Coutto 纽扣纸样
 lang: zh-CN
 weight: 1
 icon: "/images/CouttoApp.icon/Assets/App Icon Vector 3.svg"
+slogan: 让每个都自信创造
+mockup: "/images/coutto/iphone-mockup.png"
+download_url: http://coutto.app
+download_label: 前往下载
 ---
 
 Coutto 纽扣纸样支持投影仪裁切、拼接、打印、管理与存储纸样，一个 App 全搞定。

@@ -4,15 +4,30 @@ bodyClass: "page-service"
 ---
 
 <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
-  <div class="row justify-content-start">
-    <div class="col-12 col-md-8">
-      <div class="service service-single">
+  <div class="service service-single{% if page.mockup %} product-with-mockup{% endif %}">
+    {% if page.mockup %}
+    <div class="product-mockup">
+      <img src="{{ page.mockup | relative_url }}" alt="{{ page.title }} iPhone preview" width="280" height="561">
+    </div>
+    {% endif %}
+    <div class="product-main">
+      <div class="product-header">
         {% if page.icon %}
-        <img src="{{ page.icon | relative_url }}" alt="{{ page.title }} logo" width="120">
+        <img class="product-icon" src="{{ page.icon | relative_url }}" alt="{{ page.title }} logo" width="120" height="120">
         {% endif %}
-        <h1 class="title h2">{{page.title}}</h1>
-        <div class="content">{{content}}</div>
+        <div class="product-heading">
+          <h1 class="title h2">{{page.title}}</h1>
+          {% if page.slogan %}
+          <p class="product-slogan">{{ page.slogan }}</p>
+          {% endif %}
+        </div>
       </div>
+      <div class="content">{{content}}</div>
+      {% if page.download_url %}
+      <p class="product-download">
+        <a href="{{ page.download_url }}">{% if page.lang == 'en' %}{{ page.download_label | default: 'Download' }}: {{ page.download_url }}{% else %}{{ page.download_label | default: '前往下载' }}：{{ page.download_url }}{% endif %}</a>
+      </p>
+      {% endif %}
     </div>
   </div>
 </div>
