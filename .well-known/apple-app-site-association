@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "N9FFQ3KTBV.app.coutto.jade",
+        "paths": ["/coutto", "/coutto/*"]
+      }
+    ]
+  }
+}
