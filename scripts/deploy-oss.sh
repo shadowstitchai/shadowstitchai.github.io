@@ -64,6 +64,22 @@ DEST="oss://${OSS_BUCKET}/"
 echo "==> Syncing _site/ -> ${DEST}"
 "$OSSUTIL" -c "$CONFIG_FILE" sync "$ROOT/_site/" "$DEST" --delete --force
 
+# Keep static website subdirectory index enabled (needed for /coutto/ -> index.html).
+echo "==> Ensuring OSS static website (SupportSubDir)"
+"$OSSUTIL" -c "$CONFIG_FILE" api put-bucket-website --bucket "${OSS_BUCKET}" --website-configuration "$(cat <<'EOF'
+{"IndexDocument":{"Suffix":"index.html","SupportSubDir":"true","Type":"1"},"ErrorDocument":{"Key":"404.html","HttpStatus":"404"}}
+EOF
+)" >/dev/null
+
+# Empty "directory" markers (keys ending in /) break subdirectory index pages.
+# Remove the coutto/ marker and also publish the page at /coutto (no trailing slash).
+echo "==> Fixing /coutto landing object keys"
+"$OSSUTIL" -c "$CONFIG_FILE" rm "oss://${OSS_BUCKET}/coutto/" -f >/dev/null 2>&1 || true
+if [[ -f "$ROOT/_site/coutto/index.html" ]]; then
+  "$OSSUTIL" -c "$CONFIG_FILE" cp "$ROOT/_site/coutto/index.html" "oss://${OSS_BUCKET}/coutto" \
+    --content-type "text/html; charset=utf-8" -f
+fi
+
 echo "==> Deploy complete."
 if [[ -n "${OSS_WEBSITE_URL:-}" ]]; then
   echo "    ${OSS_WEBSITE_URL}"
