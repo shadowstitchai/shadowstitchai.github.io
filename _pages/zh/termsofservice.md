@@ -90,5 +90,5 @@ description: 北京暗线科技有限公司服务条款，适用于 Coutto、Kni
 
 **北京暗线科技有限公司**
 
-- 邮箱：[contact@shadowstitch.cn](mailto:contact@shadowstitch.cn)
+- 邮箱：[admin@shadowstitch.cn](mailto:admin@shadowstitch.cn)
 - 网站：[https://shadowstitchai.github.io](https://shadowstitchai.github.io)

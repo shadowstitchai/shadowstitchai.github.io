@@ -72,13 +72,16 @@ EOF
 )" >/dev/null
 
 # Empty "directory" markers (keys ending in /) break subdirectory index pages.
-# Remove the coutto/ marker and also publish the page at /coutto (no trailing slash).
-echo "==> Fixing /coutto landing object keys"
-"$OSSUTIL" -c "$CONFIG_FILE" rm "oss://${OSS_BUCKET}/coutto/" -f >/dev/null 2>&1 || true
-if [[ -f "$ROOT/_site/coutto/index.html" ]]; then
-  "$OSSUTIL" -c "$CONFIG_FILE" cp "$ROOT/_site/coutto/index.html" "oss://${OSS_BUCKET}/coutto" \
-    --content-type "text/html; charset=utf-8" -f
-fi
+# Publish these pages also at their no-trailing-slash URL, e.g. /coutto and
+# /products/knitto/privacy, so both URL forms resolve.
+echo "==> Fixing no-trailing-slash landing object keys"
+for page in "coutto" "contact" "en/contact" "products/knitto/privacy" "en/products/knitto/privacy"; do
+  "$OSSUTIL" -c "$CONFIG_FILE" rm "oss://${OSS_BUCKET}/${page}/" -f >/dev/null 2>&1 || true
+  if [[ -f "$ROOT/_site/${page}/index.html" ]]; then
+    "$OSSUTIL" -c "$CONFIG_FILE" cp "$ROOT/_site/${page}/index.html" "oss://${OSS_BUCKET}/${page}" \
+      --content-type "text/html; charset=utf-8" -f
+  fi
+done
 
 echo "==> Deploy complete."
 if [[ -n "${OSS_WEBSITE_URL:-}" ]]; then

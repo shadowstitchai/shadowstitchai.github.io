@@ -95,7 +95,7 @@ description: 北京暗线科技有限公司隐私政策，适用于 Coutto、Kni
 - **注销账户**（如适用）
 - **获取解释**本政策或个人信息的处理规则
 
-您可通过 **contact@shadowstitch.cn** 行使上述权利。我们将在验证身份后于合理期限内答复。
+您可通过 **admin@shadowstitch.cn** 行使上述权利。我们将在验证身份后于合理期限内答复。
 
 ## 8. 未成年人保护
 
@@ -109,7 +109,7 @@ description: 北京暗线科技有限公司隐私政策，适用于 Coutto、Kni
 
 **北京暗线科技有限公司**
 
-- 邮箱：[contact@shadowstitch.cn](mailto:contact@shadowstitch.cn)
+- 邮箱：[admin@shadowstitch.cn](mailto:admin@shadowstitch.cn)
 - 网站：[https://shadowstitchai.github.io](https://shadowstitchai.github.io)
 
 如您对本政策或个人信息处理有任何疑问、意见或投诉，请通过上述邮箱联系我们。

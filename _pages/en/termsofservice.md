@@ -85,5 +85,5 @@ These Terms are governed by the laws of the People's Republic of China, without 
 
 **Beijing Shadow Stitch Technology Co., Ltd.**
 
-- Email: [contact@shadowstitch.cn](mailto:contact@shadowstitch.cn)
+- Email: [admin@shadowstitch.cn](mailto:admin@shadowstitch.cn)
 - Website: [https://shadowstitchai.github.io](https://shadowstitchai.github.io)

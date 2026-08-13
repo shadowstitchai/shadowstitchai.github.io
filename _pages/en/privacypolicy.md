@@ -93,7 +93,7 @@ Depending on applicable law, you may have the right to:
 - Close your account (if applicable)
 - Request an explanation of our processing practices
 
-Contact us at **contact@shadowstitch.cn** to exercise these rights. We will respond within a reasonable period after verifying your identity.
+Contact us at **admin@shadowstitch.cn** to exercise these rights. We will respond within a reasonable period after verifying your identity.
 
 ## 8. Children's Privacy
 
@@ -107,7 +107,7 @@ We may update this Privacy Policy from time to time. Material changes will be co
 
 **Beijing Shadow Stitch Technology Co., Ltd.**
 
-- Email: [contact@shadowstitch.cn](mailto:contact@shadowstitch.cn)
+- Email: [admin@shadowstitch.cn](mailto:admin@shadowstitch.cn)
 - Website: [https://shadowstitchai.github.io](https://shadowstitchai.github.io)
 
 If you have questions, comments, or complaints about this Privacy Policy, please contact us at the email above.
