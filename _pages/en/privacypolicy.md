@@ -7,7 +7,7 @@ description: Privacy Policy of Beijing Shadow Stitch Technology Co., Ltd. for Co
 
 **Effective date: June 17, 2026**
 
-Beijing Shadow Stitch Technology Co., Ltd. ("**we**," "**us**," or "**our**") respects your privacy. This Privacy Policy explains how we collect, use, store, share, and protect personal information when you use **Coutto**, **Knitto**, our website at **shadowstitch.ai**, and related online services (collectively, the "**Services**").
+Beijing Shadow Stitch Technology Co., Ltd. ("**we**," "**us**," or "**our**") respects your privacy. This Privacy Policy explains how we collect, use, store, share, and protect personal information when you use **Coutto Pattern**, **Knitto Stitch**, our website at **shadowstitch.ai**, and related online services (collectively, the "**Services**").
 
 Please read this policy carefully before using the Services. By accessing or continuing to use the Services, you acknowledge this Privacy Policy.
 
@@ -16,7 +16,7 @@ Please read this policy carefully before using the Services. By accessing or con
 This policy applies to our tool and mobile app Services, including:
 
 - **Coutto**: pattern projection, cutting, printing, management, and storage
-- **Knitto**: knitting stitch demos and project progress tracking
+- **Knitto Stitch**: photo-guided stitch cookbook, symbol search, favorites, and row counters
 - **Shadow Stitch website**: product information and contact pages
 
 If a specific Service provides a separate privacy notice, that notice applies where it conflicts with this policy.

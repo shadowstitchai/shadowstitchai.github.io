@@ -1,9 +1,9 @@
 ---
 title: 联系
 layout: contact
-description: 联系北京暗线科技有限公司。
+description: 产品反馈、使用问题，或联系暗线科技。
 ---
 
-如果你想了解暗线科技，或希望一起探索 AI 产品、创作工具与智能工作流，可以通过邮件联系我们。
+使用 Coutto、Knitto 遇到故障，或想提功能建议，发邮件即可。商务合作和其他事务也可以写到这里。
 
-**邮箱**：[admin@shadowstitch.cn](mailto:admin@shadowstitch.cn)
+排查问题请带上产品名称、设备与系统版本，以及现象说明或截图。

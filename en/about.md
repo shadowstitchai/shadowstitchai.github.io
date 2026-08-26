@@ -6,9 +6,6 @@ permalink: /en/about/
 lang: en
 ---
 
-Shadow Stitch Technology is a technology company focused on AI creative tools and intelligent workflows.
+Shadow Stitch is a technology company focused on AI tools for handmade creation and intelligent workflows. AI craft, made simple, so more people can enjoy making by hand.
 
-Our brand, Shadow Stitch, reflects a way of working: weaving ideas, workflows, and capabilities hidden in the details into product experiences that are simple, reliable, and usable.
-
-**Slogan**: AI Craft, Made simple.  
-**Vision**: Empowering everyone to make with confidence.
+**Vision**: Empowering everyone to make by hand with confidence.

@@ -1,13 +1,13 @@
 ---
 title: Contact
 layout: contact
-description: Contact Beijing Shadow Stitch Technology Co., Ltd.
+description: Product feedback, troubleshooting, or contact Shadow Stitch.
 permalink: /en/contact/
 lang: en
 ---
 
-If you would like to learn more about Shadow Stitch, or explore AI products, creative tools, and intelligent workflows together, please reach out by email.
+If Coutto or Knitto isn't working, or you have a feature request, email us. The same address works for partnerships and other inquiries.
 
-**Email**: [admin@shadowstitch.cn](mailto:admin@shadowstitch.cn)
+For bugs, include the product name, your device and OS version, and what happened (a screenshot helps).
 
 Beijing Shadow Stitch Technology Co., Ltd.

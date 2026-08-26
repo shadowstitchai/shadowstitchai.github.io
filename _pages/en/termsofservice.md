@@ -7,13 +7,13 @@ description: Terms of Service of Beijing Shadow Stitch Technology Co., Ltd. for 
 
 **Effective date: June 17, 2026**
 
-Welcome to the products and services provided by Beijing Shadow Stitch Technology Co., Ltd. ("**we**," "**us**," or "**our**"), including the **Coutto** and **Knitto** mobile apps and the **shadowstitch.ai** website (collectively, the "**Services**").
+Welcome to the products and services provided by Beijing Shadow Stitch Technology Co., Ltd. ("**we**," "**us**," or "**our**"), including the **Coutto Pattern** and **Knitto Stitch** mobile apps and the **shadowstitch.ai** website (collectively, the "**Services**").
 
 Please read these Terms of Service ("**Terms**") carefully. By accessing, downloading, installing, or using the Services, you agree to be bound by these Terms. If you do not agree, do not use the Services.
 
 ## 1. Description of Services
 
-We provide tool apps and related online services for craft and creative workflows, including sewing pattern tools and knitting assistance. Features may vary by product version and platform. We may update, modify, or discontinue features at any time.
+We provide tool apps and related online services for craft and creative workflows, including sewing pattern tools and a knitting stitch cookbook. Features may vary by product version and platform. We may update, modify, or discontinue features at any time.
 
 ## 2. Eligibility
 

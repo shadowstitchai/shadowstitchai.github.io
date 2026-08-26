@@ -2,14 +2,14 @@
 title: Knitto Privacy Policy
 permalink: /en/products/knitto/privacy/
 lang: en
-description: Privacy Policy for the Knitto knitting app. Knitto is local-first and collects no personal data; it uses no advertising, tracking, or third-party analytics.
+description: Privacy Policy for Knitto Stitch. Knitto is local-first and collects no personal data; it uses no advertising, tracking, or third-party analytics.
 ---
 
 **Effective date: August 13, 2026**
 
-Beijing Shadow Stitch Technology Co., Ltd. ("**we**," "**us**," or "**our**") respects your privacy. This Privacy Policy explains how we handle your information when you use **Knitto** (the "**App**").
+Beijing Shadow Stitch Technology Co., Ltd. ("**we**," "**us**," or "**our**") respects your privacy. This Privacy Policy explains how we handle your information when you use **Knitto Stitch** (the "**App**").
 
-Knitto is a knitting tool that provides stitch demos and project progress tracking. We designed Knitto around a "local-first, collect-nothing by default" principle: your data stays on your device by default.
+Knitto Stitch is a pocket stitch cookbook with photo-guided lessons for 27 classic knitting stitches, plus search, favorites, and a row counter. We designed Knitto around a "local-first, collect-nothing by default" principle: your data stays on your device by default.
 
 ## 1. Information We Collect
 
