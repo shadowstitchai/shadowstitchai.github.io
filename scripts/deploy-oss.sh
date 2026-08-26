@@ -71,15 +71,21 @@ echo "==> Ensuring OSS static website (SupportSubDir)"
 EOF
 )" >/dev/null
 
-# Empty "directory" markers (keys ending in /) break subdirectory index pages.
-# Publish these pages also at their no-trailing-slash URL, e.g. /coutto and
-# /products/knitto/privacy, so both URL forms resolve.
-echo "==> Fixing no-trailing-slash landing object keys"
+# Keep both URL forms for key landings:
+# - /page/ needs the directory marker "page/" + page/index.html (OSS SupportSubDir)
+# - /page  needs a file object "page" (Universal Links / no-trailing-slash)
+# Do NOT delete the "page/" marker; removing it makes HEAD /page/ 404 and can
+# break CDN/browser navigation even when GET somehow still returns HTML.
+echo "==> Fixing landing object keys (dir marker + no-trailing-slash)"
 for page in "coutto" "en/coutto" "contact" "en/contact" "en/designer" "products/knitto/privacy" "en/products/knitto/privacy" "products/coutto/privacy" "en/products/coutto/privacy"; do
-  "$OSSUTIL" -c "$CONFIG_FILE" rm "oss://${OSS_BUCKET}/${page}/" -f >/dev/null 2>&1 || true
   if [[ -f "$ROOT/_site/${page}/index.html" ]]; then
     "$OSSUTIL" -c "$CONFIG_FILE" cp "$ROOT/_site/${page}/index.html" "oss://${OSS_BUCKET}/${page}/index.html" \
       --content-type "text/html; charset=utf-8" -f
+    "$OSSUTIL" -c "$CONFIG_FILE" api put-object \
+      --bucket "${OSS_BUCKET}" \
+      --key "${page}/" \
+      --body "" \
+      --content-type "application/x-directory" >/dev/null
     "$OSSUTIL" -c "$CONFIG_FILE" cp "$ROOT/_site/${page}/index.html" "oss://${OSS_BUCKET}/${page}" \
       --content-type "text/html; charset=utf-8" -f
   fi
