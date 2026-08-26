@@ -1,6 +1,16 @@
 {% assign current_lang = page.lang | default: site.lang | default: 'zh-CN' %}
 {% if current_lang == 'en' %}
   {% assign t = site.data.i18n.en %}
+  {% assign alt_lang_url = page.url | replace_first: '/en/', '/' %}
 {% else %}
   {% assign t = site.data.i18n.zh-CN %}
+  {% assign alt_lang_url = '/en' | append: page.url %}
 {% endif %}
+{% assign alt_page = site.pages | concat: site.documents | where: 'url', alt_lang_url | first %}
+{% unless alt_page %}
+  {% if current_lang == 'en' %}
+    {% assign alt_lang_url = '/' %}
+  {% else %}
+    {% assign alt_lang_url = '/en/' %}
+  {% endif %}
+{% endunless %}

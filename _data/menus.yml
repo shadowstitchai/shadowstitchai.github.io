@@ -10,7 +10,7 @@ zh-CN:
       url: "/contact/"
       weight: 4
     - name: "English"
-      url: "/en/"
+      lang_switch: true
       weight: 5
   footer:
     - name: "首页"
@@ -23,7 +23,7 @@ zh-CN:
       url: "/termsofservice/"
       weight: 3
     - name: "English"
-      url: "/en/"
+      lang_switch: true
       weight: 4
 
 en:
@@ -38,7 +38,7 @@ en:
       url: "/en/contact/"
       weight: 4
     - name: "中文"
-      url: "/"
+      lang_switch: true
       weight: 5
   footer:
     - name: "Home"
@@ -51,5 +51,5 @@ en:
       url: "/en/termsofservice/"
       weight: 3
     - name: "中文"
-      url: "/"
+      lang_switch: true
       weight: 4

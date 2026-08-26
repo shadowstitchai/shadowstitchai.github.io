@@ -7,8 +7,9 @@
   {% endif %}
   <ul>
     {% for item in mainmenu %}
+    {% if item.lang_switch %}{% assign item_url = alt_lang_url %}{% else %}{% assign item_url = item.url %}{% endif %}
     <li class="{% if item.url == page.url %}active{% endif %}">
-      <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+      <a href="{{ item_url | relative_url }}">{{ item.name }}</a>
     </li>
     {% endfor %}
   </ul>
