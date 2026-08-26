@@ -2,6 +2,8 @@
 title: 联系
 layout: contact
 description: 产品反馈、使用问题，或联系暗线科技。
+permalink: /contact/
+lang: zh-CN
 ---
 
 使用 Coutto、Knitto 遇到故障，或想提功能建议，发邮件即可。商务合作和其他事务也可以写到这里。

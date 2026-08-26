@@ -75,9 +75,11 @@ EOF
 # Publish these pages also at their no-trailing-slash URL, e.g. /coutto and
 # /products/knitto/privacy, so both URL forms resolve.
 echo "==> Fixing no-trailing-slash landing object keys"
-for page in "coutto" "contact" "en/contact" "products/knitto/privacy" "en/products/knitto/privacy" "products/coutto/privacy" "en/products/coutto/privacy"; do
+for page in "coutto" "en/coutto" "contact" "en/contact" "en/designer" "products/knitto/privacy" "en/products/knitto/privacy" "products/coutto/privacy" "en/products/coutto/privacy"; do
   "$OSSUTIL" -c "$CONFIG_FILE" rm "oss://${OSS_BUCKET}/${page}/" -f >/dev/null 2>&1 || true
   if [[ -f "$ROOT/_site/${page}/index.html" ]]; then
+    "$OSSUTIL" -c "$CONFIG_FILE" cp "$ROOT/_site/${page}/index.html" "oss://${OSS_BUCKET}/${page}/index.html" \
+      --content-type "text/html; charset=utf-8" -f
     "$OSSUTIL" -c "$CONFIG_FILE" cp "$ROOT/_site/${page}/index.html" "oss://${OSS_BUCKET}/${page}" \
       --content-type "text/html; charset=utf-8" -f
   fi
