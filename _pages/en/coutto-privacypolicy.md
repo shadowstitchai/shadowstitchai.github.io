@@ -96,20 +96,36 @@ Depending on applicable law, you may have the right to:
 - Correct or update inaccurate information
 - Delete information where legally permitted
 - Withdraw consent (without affecting prior processing based on consent)
-- Close your account (if applicable)
+- Close your account (delete your account in the app; see Section 8)
 - Request an explanation of our processing practices
 
-Contact us at **admin@shadowstitch.cn** to exercise these rights. We will respond within a reasonable period after verifying your identity.
+Except for closing your account (which is handled in the app; see Section 8), you can contact us at **admin@shadowstitch.cn** to exercise these rights. We will respond within a reasonable period after verifying your identity.
 
-## 8. Children's Privacy
+## 8. Account Deletion
+
+You can delete your account in the app. Deletion is permanent and cannot be undone.
+
+### 8.1 Delete your account
+
+- **Entry**: In the app, go to Settings → Account → "Delete Account".
+- **What happens**: Your account, profile, credits, invite records, and cloud pattern backup will be permanently deleted. Purchased credits and subscription benefits will be void and non-refundable. Your on-device pattern library is kept by default.
+- **Optional**: You can also select "Also delete on-device pattern files" to remove local pattern files from your device.
+- **Confirmation**: The app will ask you to confirm (a "Final Confirmation" step). Once confirmed, deletion is executed immediately and cannot be undone.
+- **Apple Sign-In users**: If you signed in with Sign in with Apple, we will simultaneously revoke your authorization with Apple and delete the related sign-in data.
+
+### 8.2 Delete guest data
+
+If you use the app without signing in (guest mode), you can clear your guest data via Settings → Account → "Delete Guest Data".
+
+## 9. Children's Privacy
 
 The Service is intended primarily for adults. If you are under 18, please use the Service with guardian guidance. We do not knowingly collect unnecessary personal information from children.
 
-## 9. Changes to This Policy
+## 10. Changes to This Policy
 
 We may update this Privacy Policy from time to time. Material changes will be communicated through the app, website, or other reasonable means. Continued use after updates constitutes acceptance of the revised policy.
 
-## 10. Contact Us
+## 11. Contact Us
 
 **Beijing Shadow Stitch Technology Co., Ltd.**
 
