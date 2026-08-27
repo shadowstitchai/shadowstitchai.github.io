@@ -77,7 +77,7 @@ EOF
 # Do NOT delete the "page/" marker; removing it makes HEAD /page/ 404 and can
 # break CDN/browser navigation even when GET somehow still returns HTML.
 echo "==> Fixing landing object keys (dir marker + no-trailing-slash)"
-for page in "coutto" "en/coutto" "contact" "en/contact" "en/designer" "products/knitto/privacy" "en/products/knitto/privacy" "products/coutto/privacy" "en/products/coutto/privacy"; do
+for page in "coutto" "en/coutto" "contact" "en/contact" "en/designer" "products/knitto/privacy" "en/products/knitto/privacy" "products/coutto/privacy" "en/products/coutto/privacy" "products/coutto/terms-of-service" "en/products/coutto/terms-of-service"; do
   if [[ -f "$ROOT/_site/${page}/index.html" ]]; then
     "$OSSUTIL" -c "$CONFIG_FILE" cp "$ROOT/_site/${page}/index.html" "oss://${OSS_BUCKET}/${page}/index.html" \
       --content-type "text/html; charset=utf-8" -f
