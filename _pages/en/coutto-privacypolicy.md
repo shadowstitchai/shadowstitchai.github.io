@@ -22,7 +22,7 @@ We collect information that is reasonably necessary to provide and improve the S
 ### 2.1 Information you provide
 
 - **Contact information**: email address, name, and message content when you contact us
-- **Account and profile information**: when you sign in or register, we may receive your phone number (SMS sign-in), third-party account identifiers (WeChat / Apple sign-in), and profile details you provide, such as your display name and avatar; an invite code (optional) is used to claim storage bonuses
+- **Account and profile information**: when you sign in or register, we may receive your phone number (**Android SMS sign-in only**), third-party account identifiers (WeChat / Sign in with Apple), and profile details you provide, such as your display name and avatar; an invite code (optional) is used to claim storage bonuses. On **iOS**, sign-in is Sign in with Apple and, in China, WeChat.
 - **User content**: pattern files, images, and project records you import, create, or manage (primarily processed and stored on your device)
 
 ### 2.2 Information collected automatically
@@ -35,7 +35,9 @@ We collect information that is reasonably necessary to provide and improve the S
 | Log data | error logs and performance metrics (where applicable) | stability and security |
 | Network information | IP address (may be truncated or generalized), network type | security and analytics |
 
-On Android, the app and third-party SDKs collect the device identifiers and installed-app list described below only after you give explicit consent (see Section 4.1).
+The Android identifiers, MAC address, and installed-app list in the table above apply to Android only (Section 2.2.1). **iOS collection, mapped to App Store Privacy labels, is in Section 2.2.2.**
+
+On Android, the app and third-party SDKs collect the information in Section 2.2.1 only after you agree to this policy in the first-launch dialog (see Section 4.1). iOS has no such dialog; starting to use the app means you accept this policy.
 
 In addition, even if you do not sign in, the Service generates an anonymous user identifier for features such as the cloud pattern library, cloud backup, and credits (see Section 4). This identifier does not directly identify you.
 
@@ -48,6 +50,28 @@ To identify the device, prevent abuse and fraud, protect account and cloud-backu
 - **Scope**: Android only; used only for the purposes in this section and Sections 3 and 4; not for advertising targeting and not sold to unrelated parties. The iOS app does not collect these Android identifiers, MAC addresses, or installed app lists.
 
 **Android ID (Android_ID)** is read by the app itself for cloud-backup device ownership. **MAC address**, some other identifiers, and the **installed app list** are primarily collected by the Umeng analytics SDK and WeChat Open SDK after you consent (see Section 4.1).
+
+#### 2.2.2 Data collected on iOS (App Store Privacy labels)
+
+The iOS app **does not collect** the Android identifiers, MAC addresses, or installed-app lists in Section 2.2.1. The table below lists what iOS actually collects, using App Store Connect “App Privacy” data types. These items support app functionality; they may be linked to your account or device, and they are **not used for tracking or third-party advertising**. Debug builds do not initialize Umeng, so they do not collect usage or diagnostic data.
+
+| Data type (App Store) | Collected | Purpose | How we collect it |
+| --- | --- | --- | --- |
+| Email Address | Yes | App Functionality | If you share an email with Sign in with Apple; the email you enter to claim Beta Pro; email you send us for support |
+| Name | Yes | App Functionality | Display name and bio on your profile (visible to all users, editable only by you); the name you share with Sign in with Apple |
+| Phone Number | No | — | iOS does not offer SMS sign-in and does not collect phone numbers |
+| User Content | Yes | App Functionality | Pattern and embroidery files, tags, and folders you import or create; synced to our servers if you enable cloud backup |
+| Photos or Videos | Yes | App Functionality | Avatar uploads; camera capture for pattern scanning or projection calibration, processed mainly on-device |
+| User ID | Yes | App Functionality | Account ID, anonymous user ID, and the Apple user identifier (sub), used for sign-in, subscriptions, credits, and cloud backup |
+| Device ID | Yes | App Functionality, Analytics | In non-debug builds, Umeng may read iOS identifiers such as IDFV for analytics and basic anti-fraud. We do not show App Tracking Transparency; we do not use IDFA for advertising tracking |
+| Purchase History | Yes | App Functionality | Subscription and credit purchases and entitlements via the App Store and RevenueCat. We do not collect payment card numbers |
+| Product Interaction (Usage Data) | Yes | Analytics | Umeng U-App: sessions, screens, and feature use. Non-debug builds; starts after you enter the main UI |
+| Crash Data, Performance Data (Diagnostics) | Yes | App Functionality, Analytics | Umeng U-APM: crashes, hangs, launch and network performance. Non-debug builds |
+| Advertising Data | No | — | We disable Umeng Apple Search Ads and SKAdNetwork. We do not use this data for ads or cross-app tracking |
+
+**Sign in with Apple:** we receive the unique identifier (sub) from Apple, the name and email you choose to share, and the credentials needed to complete sign-in. Identity tokens are verified on the server to create or sign you into an account and are not kept long-term on the device. To revoke Apple authorization when you delete your account, we store the Apple-issued refresh token in encrypted form on the server, only for account lifecycle management; it is revoked and deleted with the account.
+
+**Umeng on iOS:** there is no first-launch privacy dialog. In non-debug builds, Umeng analytics and U-APM start after you enter the main UI.
 
 ### 2.3 Permissions
 
@@ -79,7 +103,7 @@ We do not sell your personal information. We may share information when:
   - **RevenueCat**: processes subscription and credit purchase status, entitlements, and anonymous user identifiers for in-app purchases and entitlement delivery
   - **Alibaba Cloud**: provides server hosting for accounts, the cloud pattern library, and cloud backup (stored in the People's Republic of China)
   - **WeChat Open Platform / WeChat Open SDK**: provides WeChat sign-in (only when you choose WeChat sign-in)
-  - **Umeng+ analytics SDK / U-APM**: app analytics and crash reporting on iOS and Android (collected only with your consent)
+  - **Umeng+ analytics SDK / U-APM**: app analytics and crash reporting. On Android, initialized after you accept the first-launch dialog; on iOS, after you enter the main UI (not in debug builds)
   - **Apple App Store / Google Play**: process in-app payments; we do not collect your payment card information
 - **Business transfers** occur (merger, acquisition, or reorganization), with continued protection under this policy
 
@@ -87,12 +111,12 @@ Some providers, such as RevenueCat, may process the information described above 
 
 ### 4.1 Third-party SDK list
 
-SDKs that collect device information are initialized only after you agree to this Privacy Policy. Each SDK’s own privacy policy governs its processing. Collection of the installed app list by WeChat Open SDK occurs primarily on Android.
+SDK initialization: on Android, after you agree to this policy in the first-launch dialog; on iOS, after you enter the main UI (non-debug). Each SDK’s own privacy policy governs its processing. The installed-app list collected by WeChat Open SDK is Android-only.
 
 | SDK | Developer | Purpose | Personal information collected | Method | Privacy policy |
 | --- | --- | --- | --- | --- | --- |
-| Umeng+ analytics SDK (UMCommon / UMASMS) and U-APM | Umeng Tongxin (Beijing) Technology Co., Ltd. | analytics, crash/ANR reporting, basic anti-fraud (iOS and Android) | device information (IMEI, MEID, **Android ID (Android_ID)**, OAID, IDFA, IDFV, OpenUDID, **MAC address**, IMSI, GUID, ICCID, device serial number), network information, IP address, **installed app list** (primarily on Android) | SDK collection after you agree to this policy | [Umeng privacy policy](https://www.umeng.com/page/policy) |
-| WeChat Open SDK | Tencent | WeChat sign-in; detect whether WeChat is installed | device identifiers (**Android ID (Android_ID)**, OAID, etc.), **installed app list** (whether WeChat is installed), network status | SDK collection when you use WeChat sign-in | [WeChat Open SDK personal information rules](https://support.weixin.qq.com/cgi-bin/mmsupportacctnodeweb-bin/pages/RYIYJkLOrQwu0nb8) |
+| Umeng+ analytics SDK (UMCommon) and U-APM | Umeng Tongxin (Beijing) Technology Co., Ltd. | analytics, crash/ANR reporting, basic anti-fraud | **iOS**: device model and OS version, IDFV, network information, IP address, usage data, crash and performance data (no IMEI / MAC / installed-app list; no tracking permission). **Android**: IMEI, MEID, **Android ID (Android_ID)**, OAID, **MAC address**, IMSI, GUID, ICCID, device serial number, network information, IP address, **installed app list** | iOS: SDK collection after you enter the main UI (non-debug). Android: SDK collection after you agree to this policy | [Umeng privacy policy](https://www.umeng.com/page/policy) |
+| WeChat Open SDK | Tencent | WeChat sign-in; on Android, detect whether WeChat is installed | **iOS**: account identifiers needed for WeChat sign-in, network status. **Android**: device identifiers (**Android ID (Android_ID)**, OAID, etc.), **installed app list** (whether WeChat is installed), network status | SDK collection when you use WeChat sign-in | [WeChat Open SDK personal information rules](https://support.weixin.qq.com/cgi-bin/mmsupportacctnodeweb-bin/pages/RYIYJkLOrQwu0nb8) |
 | RevenueCat | RevenueCat, Inc. | subscriptions, credit purchases, entitlement checks | anonymous user identifiers, purchase and subscription status | SDK collection when you use paid features | [RevenueCat Privacy Policy](https://www.revenuecat.com/privacy) |
 
 ## 5. Storage and Retention

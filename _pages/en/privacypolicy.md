@@ -5,7 +5,7 @@ lang: en
 description: Privacy Policy of Beijing Shadow Stitch Technology Co., Ltd. for Coutto, Knitto, and related services.
 ---
 
-**Effective date: June 17, 2026**
+**Effective date: August 28, 2026**
 
 Beijing Shadow Stitch Technology Co., Ltd. ("**we**," "**us**," or "**our**") respects your privacy. This Privacy Policy explains how we collect, use, store, share, and protect personal information when you use **Coutto Pattern**, **Knitto Stitch**, our website at **shadowstitch.ai**, and related online services (collectively, the "**Services**").
 
@@ -52,6 +52,24 @@ You can revoke permissions in device settings. Some features may not work withou
 ### 2.4 AI and smart features
 
 If you use AI-assisted features, we may process content you submit (such as pattern images or project descriptions) only as needed to provide those features. We do not use such content beyond what is necessary for the requested functionality.
+
+### 2.5 Coutto Pattern (iOS / App Store Privacy labels)
+
+The **Coutto Pattern** iOS app collects the data below as declared in App Store Connect App Privacy. It is used for app functionality, may be linked to your account or device, and is not used for tracking or third-party advertising. The full policy (Android, SDKs, account deletion) is the [Coutto Privacy Policy](/en/products/coutto/privacy/).
+
+| Data type | Collected | Notes |
+| --- | --- | --- |
+| Email Address | Yes | If you share an email with Sign in with Apple; Beta Pro claim; contacting us |
+| Name | Yes | Profile display name/bio; name you share with Sign in with Apple |
+| Phone Number | No | iOS does not offer SMS sign-in |
+| User Content | Yes | Pattern and embroidery files, tags, folders; cloud backup if enabled |
+| Photos or Videos | Yes | Avatar; camera scan/calibration (mainly on-device) |
+| User ID | Yes | Account ID, anonymous ID, Apple user identifier (sub) |
+| Device ID | Yes | Umeng may read IDFV in non-debug builds; no tracking prompt; IDFA not used for ads |
+| Purchase History | Yes | App Store / RevenueCat subscriptions and credit packs; no card numbers |
+| Product Interaction (Usage Data) | Yes | Umeng U-App (non-debug; after you enter the main UI) |
+| Crash Data, Performance Data | Yes | Umeng U-APM (non-debug) |
+| Advertising Data | No | Apple Search Ads and SKAdNetwork are disabled |
 
 ## 3. How We Use Information
 
