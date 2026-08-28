@@ -5,7 +5,7 @@ lang: en
 description: Privacy Policy of Coutto Pattern (Beijing Shadow Stitch Technology Co., Ltd.).
 ---
 
-**Effective date: August 25, 2026**
+**Effective date: August 28, 2026**
 
 Beijing Shadow Stitch Technology Co., Ltd. ("**we**," "**us**," or "**our**") respects your privacy. This Privacy Policy explains how we collect, use, store, share, and protect personal information when you use the **Coutto Pattern** mobile app (the "**Service**").
 
@@ -29,14 +29,25 @@ We collect information that is reasonably necessary to provide and improve the S
 
 | Type | Examples | Purpose |
 | --- | --- | --- |
-| Device information | device model, OS version, language, display settings | compatibility and support |
-| App information | app version, install source, and feature usage (Android app) | product improvement |
+| Device information | device model, OS version, language, display settings, **Android ID (Android_ID)**, OAID, IMEI, MEID, IMSI, GUID, device serial number, **MAC address**, SIM serial number (ICCID) | device identification, cloud-backup ownership, service security and quality, analytics and anti-fraud |
+| Installed app list | **installed application information** (including whether WeChat or Douyin is installed) or running process information | determine whether WeChat sign-in or Douyin links can be opened; analytics SDK anti-fraud and quality analysis |
+| App information | app version, install source, and feature usage | product improvement |
 | Log data | error logs and performance metrics (where applicable) | stability and security |
-| Network information | IP address (may be truncated or generalized) | security and analytics |
+| Network information | IP address (may be truncated or generalized), network type | security and analytics |
 
-The iOS app does not integrate automatic analytics or crash reporting SDKs. On Android, basic analytics are collected via Umeng only after you give explicit consent (see Section 4).
+On Android, the app and third-party SDKs collect the device identifiers and installed-app list described below only after you give explicit consent (see Section 4.1).
 
 In addition, even if you do not sign in, the Service generates an anonymous user identifier for features such as the cloud pattern library, cloud backup, and credits (see Section 4). This identifier does not directly identify you.
+
+#### 2.2.1 Android device identifiers, MAC address, and installed app list
+
+To identify the device, prevent abuse and fraud, protect account and cloud-backup integrity, and maintain service quality, the **Android app** may collect device identifiers including **IMEI, device serial number, OAID, MEID, Android ID (Android_ID), IMSI, GUID, MAC address, and SIM serial number**. It may also obtain installed application information (the **installed app list**) or running process information.
+
+- **Purpose**: identify this device for cloud-backup ownership; detect whether WeChat or Douyin is installed so sign-in or content links can work; analytics, crash reporting, and basic anti-fraud; service security and quality.
+- **Method**: the app reads system APIs (such as `Settings.Secure.ANDROID_ID`); after you agree to this policy in the first-launch dialog, third-party SDKs collect and upload data on-device (see Section 4.1).
+- **Scope**: Android only; used only for the purposes in this section and Sections 3 and 4; not for advertising targeting and not sold to unrelated parties. The iOS app does not collect these Android identifiers, MAC addresses, or installed app lists.
+
+**Android ID (Android_ID)** is read by the app itself for cloud-backup device ownership. **MAC address**, some other identifiers, and the **installed app list** are primarily collected by the Umeng analytics SDK and WeChat Open SDK after you consent (see Section 4.1).
 
 ### 2.3 Permissions
 
@@ -47,10 +58,6 @@ To enable certain features, the app may request permissions such as:
 - **Network**: updates, sync, or loading required resources
 
 You can revoke permissions in device settings. Some features may not work without the relevant permission.
-
-### 2.4 AI and smart features
-
-Currently, features such as pattern generation, nesting, and perspective warping are processed locally on your device and do not involve uploading your content to third-party AI services. If we introduce AI-assisted features in the future, we will explain how data is handled before they launch.
 
 ## 3. How We Use Information
 
@@ -68,15 +75,25 @@ We do not sell your personal information. We may share information when:
 
 - **You give consent**
 - **Required by law** or valid legal process
-- **Service providers** help us operate the Service, subject to confidentiality obligations:
+- **Service providers** help us operate the Service, subject to confidentiality obligations (third-party SDKs and the data they collect are listed in Section 4.1):
   - **RevenueCat**: processes subscription and credit purchase status, entitlements, and anonymous user identifiers for in-app purchases and entitlement delivery
   - **Alibaba Cloud**: provides server hosting for accounts, the cloud pattern library, and cloud backup (stored in the People's Republic of China)
-  - **WeChat Open Platform**: provides WeChat sign-in (only when you choose WeChat sign-in)
-  - **Umeng**: Android app analytics (collected only with your consent; not used on iOS)
+  - **WeChat Open Platform / WeChat Open SDK**: provides WeChat sign-in (only when you choose WeChat sign-in)
+  - **Umeng+ analytics SDK / U-APM**: app analytics and crash reporting on iOS and Android (collected only with your consent)
   - **Apple App Store / Google Play**: process in-app payments; we do not collect your payment card information
 - **Business transfers** occur (merger, acquisition, or reorganization), with continued protection under this policy
 
 Some providers, such as RevenueCat, may process the information described above outside your country or region. We will take necessary measures (such as notice, consent, and contractual safeguards) to protect your personal information in accordance with applicable law.
+
+### 4.1 Third-party SDK list
+
+SDKs that collect device information are initialized only after you agree to this Privacy Policy. Each SDK’s own privacy policy governs its processing. Collection of the installed app list by WeChat Open SDK occurs primarily on Android.
+
+| SDK | Developer | Purpose | Personal information collected | Method | Privacy policy |
+| --- | --- | --- | --- | --- | --- |
+| Umeng+ analytics SDK (UMCommon / UMASMS) and U-APM | Umeng Tongxin (Beijing) Technology Co., Ltd. | analytics, crash/ANR reporting, basic anti-fraud (iOS and Android) | device information (IMEI, MEID, **Android ID (Android_ID)**, OAID, IDFA, IDFV, OpenUDID, **MAC address**, IMSI, GUID, ICCID, device serial number), network information, IP address, **installed app list** (primarily on Android) | SDK collection after you agree to this policy | [Umeng privacy policy](https://www.umeng.com/page/policy) |
+| WeChat Open SDK | Tencent | WeChat sign-in; detect whether WeChat is installed | device identifiers (**Android ID (Android_ID)**, OAID, etc.), **installed app list** (whether WeChat is installed), network status | SDK collection when you use WeChat sign-in | [WeChat Open SDK personal information rules](https://support.weixin.qq.com/cgi-bin/mmsupportacctnodeweb-bin/pages/RYIYJkLOrQwu0nb8) |
+| RevenueCat | RevenueCat, Inc. | subscriptions, credit purchases, entitlement checks | anonymous user identifiers, purchase and subscription status | SDK collection when you use paid features | [RevenueCat Privacy Policy](https://www.revenuecat.com/privacy) |
 
 ## 5. Storage and Retention
 
