@@ -2,12 +2,12 @@
 title: Terms of Service
 permalink: /en/products/coutto/terms-of-service/
 lang: en
-description: Terms of Service of Beijing Shadow Stitch Technology Co., Ltd. for the Coutto Pattern mobile app.
+description: Terms of Service of Beijing Shadow Stitch Technology Co., Ltd. for the Coutto Sew mobile app.
 ---
 
 **Effective date: August 27, 2026**
 
-Welcome to the **Coutto Pattern** mobile app provided by Beijing Shadow Stitch Technology Co., Ltd. ("**we**," "**us**," or "**our**") (the "**Service**"). These Terms of Service state your rights and obligations when using the Service.
+Welcome to the **Coutto Sew** mobile app provided by Beijing Shadow Stitch Technology Co., Ltd. ("**we**," "**us**," or "**our**") (the "**Service**"). These Terms of Service state your rights and obligations when using the Service.
 
 Please read these Terms of Service ("**Terms**") carefully before using the Service. By accessing, downloading, installing, or using the Service, you agree to be bound by these Terms. If you do not agree, do not use the Service.
 

@@ -6,7 +6,7 @@ weight: 1
 icon: "/images/CouttoApp.icon/Assets/app-icon.png"
 slogan: 让每个人都自信手作！
 mockup: "/images/coutto/iphone-mockup.png"
-download_url: http://coutto.app
+download_url: https://coutto.app
 download_label: 前往下载
 description: 纽扣缝纫是缝纫刺绣全能工具：投影裁切、分片打印、纸样拼接、云端管理、图片尺寸标定与刺绣编辑。
 ---

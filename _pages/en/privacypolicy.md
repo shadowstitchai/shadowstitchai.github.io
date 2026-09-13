@@ -7,7 +7,7 @@ description: Privacy Policy of Beijing Shadow Stitch Technology Co., Ltd. for Co
 
 **Effective date: August 28, 2026**
 
-Beijing Shadow Stitch Technology Co., Ltd. ("**we**," "**us**," or "**our**") respects your privacy. This Privacy Policy explains how we collect, use, store, share, and protect personal information when you use **Coutto Pattern**, **Knitto Stitch**, our website at **shadowstitch.ai**, and related online services (collectively, the "**Services**").
+Beijing Shadow Stitch Technology Co., Ltd. ("**we**," "**us**," or "**our**") respects your privacy. This Privacy Policy explains how we collect, use, store, share, and protect personal information when you use **Coutto Sew**, **Knitto Stitch**, our website at **shadowstitch.ai**, and related online services (collectively, the "**Services**").
 
 Please read this policy carefully before using the Services. By accessing or continuing to use the Services, you acknowledge this Privacy Policy.
 
@@ -53,9 +53,9 @@ You can revoke permissions in device settings. Some features may not work withou
 
 If you use AI-assisted features, we may process content you submit (such as pattern images or project descriptions) only as needed to provide those features. We do not use such content beyond what is necessary for the requested functionality.
 
-### 2.5 Coutto Pattern (iOS)
+### 2.5 Coutto Sew (iOS)
 
-When you use the **Coutto Pattern** iOS app, we may collect the information below to provide the Service. It may be linked to your account or device. We do not use it to track you across other companies’ apps or to show you third-party ads. The full policy (including Android, third-party services, and account deletion) is the [Coutto Privacy Policy](/en/products/coutto/privacy/).
+When you use the **Coutto Sew** iOS app, we may collect the information below to provide the Service. It may be linked to your account or device. We do not use it to track you across other companies’ apps or to show you third-party ads. The full policy (including Android, third-party services, and account deletion) is the [Coutto Privacy Policy](/en/products/coutto/privacy/).
 
 | Type | Collected | Details |
 | --- | --- | --- |
