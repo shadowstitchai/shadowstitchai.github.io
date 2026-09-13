@@ -2,18 +2,18 @@
 title: Privacy Policy
 permalink: /en/products/coutto/privacy/
 lang: en
-description: Privacy Policy of Coutto Pattern (Beijing Shadow Stitch Technology Co., Ltd.).
+description: Privacy Policy of Coutto Sew (Beijing Shadow Stitch Technology Co., Ltd.).
 ---
 
-**Effective date: August 28, 2026**
+**Effective date: September 13, 2026**
 
-Beijing Shadow Stitch Technology Co., Ltd. ("**we**," "**us**," or "**our**") respects your privacy. This Privacy Policy explains how we collect, use, store, share, and protect personal information when you use the **Coutto Pattern** mobile app (the "**Service**").
+Beijing Shadow Stitch Technology Co., Ltd. ("**we**," "**us**," or "**our**") respects your privacy. This Privacy Policy explains how we collect, use, store, share, and protect personal information when you use the **Coutto Sew** mobile app (the "**Service**").
 
 Please read this policy carefully before using the Service. By accessing or continuing to use the Service, you acknowledge this Privacy Policy.
 
 ## 1. Scope
 
-This policy applies to the **Coutto Pattern** mobile app and related features, including pattern projection, cutting, stitching, printing, management, and storage. If the Service provides a separate privacy notice, that notice applies where it conflicts with this policy.
+This policy applies to the **Coutto Sew** mobile app and related features, including pattern projection, cutting, stitching, printing, management, and storage. If the Service provides a separate privacy notice, that notice applies where it conflicts with this policy.
 
 ## 2. Information We Collect
 
@@ -27,6 +27,8 @@ We collect information that is reasonably necessary to provide and improve the S
 
 ### 2.2 Information collected automatically
 
+To keep the Service running reliably and improve your experience, we may collect:
+
 | Type | Examples | Purpose |
 | --- | --- | --- |
 | Device information | device model, OS version, language, display settings, **Android ID (Android_ID)**, OAID, IMEI, MEID, IMSI, GUID, device serial number, **MAC address**, SIM serial number (ICCID) | device identification, cloud-backup ownership, service security and quality, analytics and anti-fraud |
@@ -37,7 +39,7 @@ We collect information that is reasonably necessary to provide and improve the S
 
 The information we collect differs on Android and iOS. See Sections 2.2.1 and 2.2.2.
 
-In addition, even if you do not sign in, the Service generates an anonymous user identifier for features such as the cloud pattern library, cloud backup, and credits (see Section 4). This identifier does not directly identify you.
+In addition, even if you do not sign in, the Service automatically creates an anonymous (guest) account on first launch for features such as the cloud pattern library, cloud backup, credits, and subscriptions (see Section 4). A guest account contains no email address, phone number, or name; it is identified only by a random identifier generated on our servers and does not directly identify you. You can upgrade it to a full account at any time with WeChat or Sign in with Apple, and you can delete it at any time (see Section 8.2).
 
 #### 2.2.1 Android device identifiers, MAC address, and installed app list
 
@@ -56,11 +58,11 @@ The iOS app does not collect the Android identifiers, MAC addresses, or installe
 | Type | Collected | Purpose | Details |
 | --- | --- | --- | --- |
 | Email Address | Yes | Providing the Service | If you sign in with Apple and choose to share your email; if you enter an email to claim a beta membership; if you email us |
-| Name | Yes | Providing the Service | The display name and bio on your profile (visible to other users, editable only by you); the name you choose to share when you sign in with Apple |
+| Name | Yes | Providing the Service | The display name and bio on your profile (visible only to you, editable only by you); the name you choose to share when you sign in with Apple |
 | Phone Number | No | — | The iOS app does not offer phone-number sign-in, and we do not collect your phone number |
 | User Content | Yes | Providing the Service | Pattern and embroidery files, tags, and folders you import or create; if you enable cloud backup, this content is stored on our servers |
 | Photos or Videos | Yes | Providing the Service | Profile photos you upload; images captured when you scan a pattern or calibrate projection, which are processed mainly on your device |
-| User ID | Yes | Providing the Service | Identifiers used for sign-in, subscriptions, credits, and cloud backup, including the account identifier Apple provides when you sign in with Apple |
+| User ID | Yes | Providing the Service | Identifiers used for sign-in, subscriptions, credits, and cloud backup, including the anonymous (guest) account identifier created automatically on first launch, and the account identifier Apple provides when you sign in with Apple |
 | Device ID | Yes | Providing the Service, analytics | Used to distinguish devices, understand usage, and help prevent abuse. We do not obtain advertising identifiers for tracking, and we do not use device identifiers to deliver ads |
 | Purchase History | Yes | Providing the Service | Your App Store subscription and credit purchases and related entitlements. We do not collect your card number or payment password |
 | Product Interaction (Usage Data) | Yes | Analytics | How long you use the app and which screens and features you use, so we can understand product performance and improve the Service |
@@ -83,7 +85,7 @@ You can revoke permissions in device settings. Some features may not work withou
 
 We may use information to:
 
-1. Provide, maintain, and improve Coutto Pattern and related services
+1. Provide, maintain, and improve Coutto Sew and related services
 2. Respond to inquiries, feedback, and support requests
 3. Protect the security and integrity of the Service
 4. Perform aggregated or anonymized analytics to improve user experience
@@ -152,7 +154,7 @@ You can delete your account in the app. Deletion is permanent and cannot be undo
 
 ### 8.2 Delete guest data
 
-If you use the app without signing in (guest mode), you can clear your guest data via Settings → Account → "Delete Guest Data".
+If you use the app without signing in (guest mode), you can delete your guest data via Settings → Account → "Delete Guest Data". This immediately and permanently deletes the anonymous account and its cloud data, with no retention period. Your on-device pattern library is kept by default; select "also delete on-device pattern files" during the deletion flow to remove local files as well.
 
 ## 9. Children's Privacy
 
