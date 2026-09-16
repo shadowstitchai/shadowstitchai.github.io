@@ -5,7 +5,7 @@ lang: en
 description: Terms of Service of Beijing Shadow Stitch Technology Co., Ltd. for the Coutto Sew mobile app.
 ---
 
-**Effective date: August 27, 2026**
+**Effective date: August 27, 2026** · **Last updated: September 16, 2026**
 
 Welcome to the **Coutto Sew** mobile app provided by Beijing Shadow Stitch Technology Co., Ltd. ("**we**," "**us**," or "**our**") (the "**Service**"). These Terms of Service state your rights and obligations when using the Service.
 
@@ -57,9 +57,18 @@ The Service may include AI or automated assistance. Outputs are provided for inf
 
 The Service may link to or integrate third-party websites, SDKs, or services. Those third parties operate under their own terms and privacy practices. We are not responsible for their content, availability, or policies.
 
-## 8. Payments and Subscriptions (If Applicable)
+## 8. Payments and Subscriptions
 
-If paid features, subscriptions, or in-app purchases are offered in the future, pricing, billing cycles, refunds, and cancellation rules will be disclosed in the app or on our website. Unless required by law or explicitly stated, fees are generally non-refundable.
+Some features of the Service are paid. Purchases made through the Apple App Store are subject to the following:
+
+- **What is for sale.** Auto-renewable subscriptions (Coutto Pro Monthly, Coutto Pro Yearly) and consumable credit packs.
+- **Payment.** Payment is charged to your Apple ID account at confirmation of purchase.
+- **Price and period.** The current price, billing period, and any introductory or trial offer are shown in the app before you confirm the purchase, and vary by storefront.
+- **Auto-renewal.** A subscription renews automatically for the same period and at the same price unless auto-renew is turned off at least 24 hours before the end of the current period. Your account is charged for renewal within 24 hours before the end of the current period.
+- **Cancelling.** You can manage or cancel a subscription at any time in your App Store account settings (Settings > your name > Subscriptions). Deleting the app does not cancel a subscription.
+- **Refunds.** Refunds for App Store purchases are handled by Apple in accordance with the App Store terms. Except where required by law or granted by Apple, fees are non-refundable.
+- **Credits.** Credit packs are consumable: credits that have been used are not restored by "Restore Purchases", are not refundable, and cannot be exchanged for cash. Restoring purchases restores subscription entitlements only.
+- **App license.** Where the app is distributed through the Apple App Store, the license for the app itself is [Apple's standard Terms of Use (EULA)](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/), unless the App Store product page presents a custom license agreement.
 
 ## 9. Disclaimer of Warranties
 
@@ -81,7 +90,21 @@ We may update these Terms from time to time. Material changes will be communicat
 
 These Terms are governed by the laws of the People's Republic of China, without regard to conflict-of-law rules. Disputes shall first be resolved through good-faith negotiation; if unresolved, they shall be submitted to a court of competent jurisdiction where we are located.
 
-## 14. Contact Us
+## 14. Apple App Store Terms
+
+The following applies when you obtained the Service through the Apple App Store:
+
+- These Terms are concluded between you and us only, and not with Apple. We, not Apple, are solely responsible for the Service and its content.
+- Apple has no obligation to provide any maintenance or support services for the Service.
+- The license granted to you in Section 4 is limited to use of the Service on Apple-branded products that you own or control, as permitted by the App Store Terms of Service.
+- To the maximum extent permitted by law, Apple has no warranty obligation whatsoever with respect to the Service. If the Service fails to conform to any applicable warranty, you may notify Apple and Apple may refund the purchase price (if any); to the maximum extent permitted by law, Apple has no other warranty obligation.
+- We, not Apple, are responsible for addressing any claims relating to the Service, including product liability claims, claims that the Service fails to conform to any legal or regulatory requirement, and claims arising under consumer protection or similar laws.
+- If a third party claims that the Service infringes that party's intellectual property rights, we, not Apple, are solely responsible for the investigation, defense, settlement and discharge of that claim.
+- You represent that you are not located in a country subject to a U.S. Government embargo or designated as a "terrorist supporting" country, and that you are not listed on any U.S. Government list of prohibited or restricted parties.
+- Apple and Apple's subsidiaries are third-party beneficiaries of these Terms, and upon your acceptance of these Terms Apple will have the right (and will be deemed to have accepted the right) to enforce these Terms against you as a third-party beneficiary.
+- You must comply with applicable third-party terms when using the Service, for example your wireless data service agreement.
+
+## 15. Contact Us
 
 **Beijing Shadow Stitch Technology Co., Ltd.**
 

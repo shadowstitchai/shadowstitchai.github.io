@@ -1,3 +1,5 @@
 # App Store URL for Jade / Coutto. Leave empty until the app is listed.
 # Example: https://apps.apple.com/app/idXXXXXXXX
+# App Store ID (Apple ID): 6797682018 → https://apps.apple.com/app/id6797682018
+# 只在 App 正式上架后才填 app_store_url；上架前填写会让 /coutto/ 的下载按钮 404。
 app_store_url: ""
